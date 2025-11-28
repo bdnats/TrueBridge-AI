@@ -1,0 +1,15 @@
+# This directory contains website images and assets
+
+## Current Files:
+- logo-light.svg - Logo for dark backgrounds (navigation and footer)
+
+## Files to Add:
+- logo-dark.svg/png - Logo for light backgrounds (if needed)
+- og-image.png - Open Graph image for social sharing (1200x630px)
+- Any other images needed for the website
+
+## Recommendations:
+- Use SVG format for logos (scalable, smaller file size)
+- Use WebP format for photos (better compression)
+- Optimize all images before uploading
+- Keep total image sizes under 500KB for fast loading

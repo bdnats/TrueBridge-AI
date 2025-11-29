@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | TrueBridge AI - Our Story, Mission & Principles</title>
+    <meta name="description" content="Learn about TrueBridge AI's mission to make AI practical and accessible for growing businesses. Discover our philosophy, principles, and how we work with clients.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'slate': {
+                            50: '#f8fafc', 100: '#f1f5f9', 200: '#e2e8f0', 300: '#cbd5e1', 400: '#94a3b8',
+                            500: '#64748b', 600: '#475569', 700: '#334155', 800: '#1e293b', 900: '#0f172a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors duration-200">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 md:h-20">
+            <div class="flex-shrink-0">
+                <a href="index.html"><img src="logo-light.png" alt="TrueBridge AI logo" class="h-8 md:h-10 dark:hidden"><img src="logo-dark.png" alt="TrueBridge AI logo" class="h-8 md:h-10 hidden dark:block"></a>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 font-medium transition-colors">Home</a>
+                <a href="services.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 font-medium transition-colors">Services</a>
+                <a href="process.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 font-medium transition-colors">Process</a>
+                <a href="about.html" class="text-slate-900 dark:text-slate-100 hover:text-blue-500 font-medium transition-colors">About</a>
+                <a href="resources.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 font-medium transition-colors">Resources</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle dark mode">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-slate-700" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-slate-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+                <a href="contact.html" class="hidden md:inline-block px-6 py-2.5 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all">Book a Free Call</a>
+                <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-lg bg-slate-100 dark:bg-slate-800" aria-label="Toggle navigation menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <div class="flex flex-col space-y-3">
+                <a href="index.html" class="text-slate-600 dark:text-slate-400 py-2">Home</a>
+                <a href="services.html" class="text-slate-600 dark:text-slate-400 py-2">Services</a>
+                <a href="process.html" class="text-slate-600 dark:text-slate-400 py-2">Process</a>
+                <a href="about.html" class="text-slate-900 dark:text-slate-100 py-2">About</a>
+                <a href="resources.html" class="text-slate-600 dark:text-slate-400 py-2">Resources</a>
+                <a href="contact.html" class="inline-block px-6 py-2.5 bg-blue-500 text-white font-semibold rounded-lg text-center mt-2">Book a Free Call</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- BRAND STORY -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-slate-100">
+                We Built TrueBridge AI Because We Were Tired of Seeing Businesses Waste Money on AI Hype
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-8">
+                We're not here to sell you the latest AI trend. We're here to help you solve real operational problems—using AI only when it makes sense.
+            </p>
+
+            <div class="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 md:p-8 space-y-4">
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    TrueBridge AI was founded on a simple observation: most businesses know they need AI and automation, but they're paralyzed by overwhelm, bad advice, and tool overload.
+                </p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    We saw companies spending tens of thousands on "AI transformation" consultants who delivered nothing but slide decks. We saw business owners trying to implement AI themselves, only to give up after wasting weeks on tools that didn't integrate with their workflows.
+                </p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    We knew there was a better way: start with operations, not technology. Focus on ROI, not innovation theater. Build practical systems that actually work—then train teams to use them.
+                </p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    That's TrueBridge AI. We bridge the gap between where you are (manual, chaotic, overwhelmed) and where you want to be (automated, scalable, clear). No hype. No fluff. Just systems that save time, reduce costs, and let you grow without burning out.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOUNDER BIO -->
+    <section class="py-16 md:py-24 bg-white dark:bg-slate-900">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-slate-900 dark:text-slate-100">Meet the Team</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div class="lg:col-span-1">
+                    <div class="aspect-square bg-gradient-to-br from-blue-400 to-violet-500 rounded-2xl flex items-center justify-center text-white text-6xl font-bold">
+                        [PHOTO]
+                    </div>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 text-center mt-2">(Add professional headshot here)</p>
+                </div>
+
+                <div class="lg:col-span-2 space-y-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100">[FOUNDER_NAME]</h3>
+                        <p class="text-lg text-blue-500 font-medium">Founder & Chief AI Strategist</p>
+                    </div>
+
+                    <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                        [FOUNDER_NAME] has spent the last [X] years helping service businesses automate operations and implement AI systems that actually deliver ROI. Before founding TrueBridge AI, [he/she/they] led operations for [TYPE_OF_COMPANY], where [he/she/they] built automation workflows that saved the team 100+ hours per month and scaled the business from $X to $Y without adding headcount.
+                    </p>
+
+                    <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                        [FOUNDER_NAME] has seen what works—and what doesn't—in the real world, not just in theory. [He/She/They] started TrueBridge AI to give other business owners the clarity, process, and execution support they wish they'd had when starting their own AI journey.
+                    </p>
+
+                    <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                        When not designing automation workflows, [FOUNDER_NAME] is [personal detail: e.g., "reading obscure business case studies," "hiking," "experimenting with new AI models"].
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE PRINCIPLES -->
+    <section class="py-16 md:py-24 bg-slate-50 dark:bg-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-slate-900 dark:text-slate-100">Our Principles: How We Work and What We Believe</h2>
+
+            <div class="space-y-6">
+                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 md:p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-slate-100">Business Outcomes > Technology Trends</h3>
+                    <p class="text-slate-700 dark:text-slate-300">We don't care about the shiniest new AI model. We care about whether it saves you time, reduces costs, or unlocks revenue. If a simple automation solves the problem better than AI, we'll tell you.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 md:p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-slate-100">Clarity > Complexity</h3>
+                    <p class="text-slate-700 dark:text-slate-300">Jargon and vague promises are the enemy. We communicate in plain language, deliver clear timelines, and define success upfront. If you don't understand what we're building or why, we've failed.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 md:p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-slate-100">Integration > Replacement</h3>
+                    <p class="text-slate-700 dark:text-slate-300">We work with what you already have. Ripping out your CRM or rebuilding your entire tech stack is almost never the answer. We integrate, connect, and enhance—without forcing you to start over.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 md:p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-slate-100">Enablement > Dependency</h3>
+                    <p class="text-slate-700 dark:text-slate-300">We want you to own the systems we build—not depend on us forever. That's why we train your team, document everything, and make ourselves optional (even though most clients choose to keep working with us).</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 md:p-8 shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-slate-100">Iteration > Perfection</h3>
+                    <p class="text-slate-700 dark:text-slate-300">AI systems improve over time. We don't wait for the "perfect" solution. We ship quickly, gather feedback, and refine based on real-world usage. Speed + iteration beats slow perfection every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="py-16 md:py-24 bg-white dark:bg-slate-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-slate-900 dark:text-slate-100">Our Philosophy: AI as Co-Pilot, Not Replacement</h2>
+
+            <div class="space-y-6">
+                <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+                    A lot of AI agencies sell a fantasy: "Replace your entire team with AI!" We think that's nonsense—and dangerous.
+                </p>
+
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    AI is a tool. A powerful one, but still a tool. It's best used to augment human judgment, not replace it. The highest ROI comes from automating repetitive, low-judgment tasks (data entry, reporting, scheduling) so your team can focus on high-judgment work (strategy, relationships, creative problem-solving).
+                </p>
+
+                <div class="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-6 border border-blue-200 dark:border-blue-800">
+                    <h3 class="font-bold text-lg mb-3 text-slate-900 dark:text-slate-100">We also believe:</h3>
+                    <ul class="space-y-3 text-slate-700 dark:text-slate-300">
+                        <li class="flex items-start gap-2"><span class="text-blue-500">•</span><span><strong>AI doesn't need to be complicated to be valuable.</strong> A simple chatbot that qualifies leads is often worth more than a complex "predictive analytics engine."</span></li>
+                        <li class="flex items-start gap-2"><span class="text-blue-500">•</span><span><strong>Data privacy and security are non-negotiable.</strong> We design systems that respect your clients' data and comply with regulations.</span></li>
+                        <li class="flex items-start gap-2"><span class="text-blue-500">•</span><span><strong>AI adoption is a journey, not a one-time project.</strong> Start small, prove value, scale from there. Don't bet the farm on an unproven use case.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW WE WORK WITH CLIENTS -->
+    <section class="py-16 md:py-24 bg-slate-50 dark:bg-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-slate-900 dark:text-slate-100">What It's Like to Work with Us</h2>
+            <p class="text-lg text-center text-slate-600 dark:text-slate-300 mb-12">Collaborative, transparent, and low-ego. We're partners, not vendors.</p>
+
+            <div class="space-y-4">
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    We don't talk down to you. We don't hide behind jargon. We don't disappear for weeks and then re-emerge with something you didn't ask for.
+                </p>
+
+                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 md:p-8">
+                    <h3 class="font-bold text-lg mb-4 text-slate-900 dark:text-slate-100">Here's what you can expect:</h3>
+                    <ul class="space-y-3 text-slate-700 dark:text-slate-300">
+                        <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span><span><strong>Weekly check-ins</strong> during active projects so you're never wondering what's happening</span></li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span><span><strong>Shared project boards</strong> so you can see progress in real time</span></li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span><span><strong>Plain-language explanations</strong> of technical decisions—no condescension, no acronyms without definitions</span></li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span><span><strong>Honest advice</strong>, even if it means talking you out of a project that won't deliver ROI</span></li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500">✓</span><span><strong>Fast responses</strong>—we aim for same-day replies on Slack or email during business hours</span></li>
+                    </ul>
+                </div>
+
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed text-center text-lg font-medium mt-8">
+                    We treat your business like it's ours. Because if you don't succeed, we haven't done our job.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-blue-500 to-violet-500 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Want to Work Together?</h2>
+            <p class="text-xl mb-8 opacity-90">Let's talk about your operations, your goals, and whether TrueBridge AI is the right fit.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-slate-100 transition-all">Let's Talk</a>
+                <a href="services.html" class="inline-block px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all">See Our Services</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 dark:bg-black text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div><img src="logo-dark.png" alt="TrueBridge AI logo" class="h-8 mb-4"><p class="text-sm">Bridging the gap between your business and AI.</p></div>
+            <div><h3 class="text-white font-semibold mb-4">Services</h3><ul class="space-y-2 text-sm"><li><a href="services.html#audit" class="hover:text-blue-400 transition-colors">AI Readiness Audit</a></li><li><a href="services.html#roadmap" class="hover:text-blue-400 transition-colors">AI Roadmap Sprint</a></li><li><a href="services.html#builds" class="hover:text-blue-400 transition-colors">Done-For-You Builds</a></li><li><a href="services.html#training" class="hover:text-blue-400 transition-colors">Training & Enablement</a></li><li><a href="services.html#support" class="hover:text-blue-400 transition-colors">Ongoing Support</a></li></ul></div>
+            <div><h3 class="text-white font-semibold mb-4">Company</h3><ul class="space-y-2 text-sm"><li><a href="about.html" class="hover:text-blue-400 transition-colors">About</a></li><li><a href="process.html" class="hover:text-blue-400 transition-colors">Process</a></li><li><a href="resources.html" class="hover:text-blue-400 transition-colors">Resources</a></li><li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a></li></ul></div>
+            <div><h3 class="text-white font-semibold mb-4">Get in Touch</h3><ul class="space-y-2 text-sm"><li><a href="mailto:hello@truebridge.ai" class="hover:text-blue-400 transition-colors">hello@truebridge.ai</a></li><li><a href="contact.html" class="hover:text-blue-400 transition-colors">Book a Free Call</a></li></ul></div>
+        </div>
+        <div class="border-t border-slate-800 pt-8 text-sm text-center"><p>&copy; 2024 TrueBridge AI. All rights reserved.</p></div>
+    </div>
+</footer>
+
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+    const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+    const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    htmlElement.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') { htmlElement.classList.add('dark'); themeToggleLightIcon.classList.remove('hidden'); } else { htmlElement.classList.remove('dark'); themeToggleDarkIcon.classList.remove('hidden'); }
+    themeToggleBtn.addEventListener('click', function() {
+        if (htmlElement.classList.contains('dark')) { htmlElement.classList.remove('dark'); htmlElement.setAttribute('data-theme', 'light'); localStorage.setItem('theme', 'light'); themeToggleDarkIcon.classList.remove('hidden'); themeToggleLightIcon.classList.add('hidden'); } else { htmlElement.classList.add('dark'); htmlElement.setAttribute('data-theme', 'dark'); localStorage.setItem('theme', 'dark'); themeToggleLightIcon.classList.remove('hidden'); themeToggleDarkIcon.classList.add('hidden'); }
+    });
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuToggle.addEventListener('click', function() { mobileMenu.classList.toggle('hidden'); });
+</script>
+
+</body>
+</html>

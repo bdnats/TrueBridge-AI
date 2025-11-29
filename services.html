@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | TrueBridge AI - AI Consulting & Automation Solutions</title>
+    <meta name="description" content="Explore TrueBridge AI's productized service offerings: AI Readiness Audits, Roadmap Sprints, Done-For-You Builds, Training Programs, and Ongoing Support. Clear deliverables, transparent pricing, measurable ROI.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'slate': {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors duration-200">
+
+<!-- HEADER / NAVBAR -->
+<header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 md:h-20">
+            <div class="flex-shrink-0">
+                <a href="index.html" class="flex items-center">
+                    <img src="logo-light.png" alt="TrueBridge AI logo" class="h-8 md:h-10 dark:hidden">
+                    <img src="logo-dark.png" alt="TrueBridge AI logo" class="h-8 md:h-10 hidden dark:block">
+                </a>
+            </div>
+
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors">Home</a>
+                <a href="services.html" class="text-slate-900 dark:text-slate-100 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors">Services</a>
+                <a href="process.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors">Process</a>
+                <a href="about.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors">About</a>
+                <a href="resources.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors">Resources</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle dark mode">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-slate-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-slate-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+
+                <a href="contact.html" class="hidden md:inline-block px-6 py-2.5 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all duration-200 hover:shadow-lg hover:scale-105">
+                    Book a Free Call
+                </a>
+
+                <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle navigation menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <div class="flex flex-col space-y-3">
+                <a href="index.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors py-2">Home</a>
+                <a href="services.html" class="text-slate-900 dark:text-slate-100 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors py-2">Services</a>
+                <a href="process.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors py-2">Process</a>
+                <a href="about.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors py-2">About</a>
+                <a href="resources.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors py-2">Resources</a>
+                <a href="contact.html" class="inline-block px-6 py-2.5 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all text-center mt-2">
+                    Book a Free Call
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- SERVICES: INTRO -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 text-slate-900 dark:text-slate-100">
+                    Services Built for Businesses That Want Results, Not Hype
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-8">
+                    Whether you're just exploring or ready to build, we have a service that meets you where you are.
+                </p>
+
+                <div class="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 md:p-8 text-left">
+                    <p class="text-slate-700 dark:text-slate-300 mb-4 leading-relaxed">
+                        We don't believe in one-size-fits-all. Some businesses need a roadmap first. Others are ready to build immediately. A few need training to empower their team long-term.
+                    </p>
+                    <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                        That's why we offer five productized services with clear deliverables, timelines, and pricing. No vague "transformation" projects. No six-month contracts before you see value.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 1: AI READINESS AUDIT -->
+    <section id="audit" class="py-16 md:py-24 bg-white dark:bg-slate-900">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-start gap-6 mb-8">
+                <div class="text-6xl">🔍</div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-slate-100">AI Readiness & Opportunity Audit</h2>
+                    <p class="text-xl text-slate-600 dark:text-slate-300">Uncover high-impact automation opportunities in your business—in just 1–2 weeks.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+                        Not sure where AI fits in your operations? Start here.
+                    </p>
+                    <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                        We'll interview your team, map your workflows, and analyze where automation and AI can deliver the fastest ROI. You'll walk away with a prioritized list of opportunities, estimated time/cost savings, and a clear "do this first" recommendation.
+                    </p>
+
+                    <div class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6">
+                        <h3 class="font-bold text-lg mb-4 text-slate-900 dark:text-slate-100">What's Included:</h3>
+                        <ul class="space-y-3 text-slate-700 dark:text-slate-300">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>3–5 stakeholder interviews (founders, ops leads, account managers, etc.)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Workflow mapping and bottleneck analysis</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Audit report with 5–10 prioritized automation opportunities</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>ROI estimates (time saved, cost reduced, revenue unlocked)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>"Quick win" recommendations you can implement immediately</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>60-minute results presentation and Q&A</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-6 border border-blue-200 dark:border-blue-800">
+                        <h3 class="font-bold mb-2 text-slate-900 dark:text-slate-100">Ideal For:</h3>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Businesses exploring AI but unsure where to start. Teams overwhelmed by too many tools and ideas. Companies that need executive buy-in before committing to larger projects.</p>
+                    </div>
+
+                    <div class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6">
+                        <div class="mb-4">
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-1">Timeline</p>
+                            <p class="text-2xl font-bold text-slate-900 dark:text-slate-100">1–2 weeks</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-1">Investment</p>
+                            <p class="text-2xl font-bold text-blue-500">Starting at $3,500</p>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="block w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all duration-200 text-center">
+                        Request an Audit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 2: AI ROADMAP SPRINT -->
+    <section id="roadmap" class="py-16 md:py-24 bg-slate-50 dark:bg-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-start gap-6 mb-8">
+                <div class="text-6xl">🗺️</div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-slate-100">AI Roadmap & Strategy Sprint</h2>
+                    <p class="text-xl text-slate-600 dark:text-slate-300">Get a custom 30-90 day AI implementation plan—prioritized, costed, and ready to execute.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+                        You know you need AI and automation. But what should you build first? And how do you avoid wasting money on the wrong solution?
+                    </p>
+                    <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                        Our Roadmap Sprint delivers a detailed, prioritized plan tailored to your operations. You'll get a phased implementation roadmap (30, 60, 90 days), cost estimates, expected ROI, and technical specifications ready to hand to your team—or ours.
+                    </p>
+
+                    <div class="bg-white dark:bg-slate-900 rounded-xl p-6">
+                        <h3 class="font-bold text-lg mb-4 text-slate-900 dark:text-slate-100">What's Included:</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-4 italic">Everything from the Readiness Audit, plus:</p>
+                        <ul class="space-y-3 text-slate-700 dark:text-slate-300">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Detailed 30-60-90 day implementation roadmap</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Prioritized project list with dependencies and sequencing</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Cost and ROI estimates for each initiative</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Technical architecture and tool recommendations</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Risk assessment and mitigation strategies</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Vendor/tool comparison (if needed)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>90-minute strategy session + roadmap walkthrough</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-6 border border-blue-200 dark:border-blue-800">
+                        <h3 class="font-bold mb-2 text-slate-900 dark:text-slate-100">Ideal For:</h3>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Businesses ready to commit to AI but need a clear plan first. Teams with budget allocated but unsure how to deploy it. Companies that want to de-risk investment with upfront planning.</p>
+                    </div>
+
+                    <div class="bg-white dark:bg-slate-900 rounded-xl p-6">
+                        <div class="mb-4">
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-1">Timeline</p>
+                            <p class="text-2xl font-bold text-slate-900 dark:text-slate-100">2–3 weeks</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-1">Investment</p>
+                            <p class="text-2xl font-bold text-blue-500">$8,500–$15,000</p>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">(depending on complexity)</p>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="block w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all duration-200 text-center">
+                        Get Your Roadmap
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 3: DONE-FOR-YOU BUILDS -->
+    <section id="builds" class="py-16 md:py-24 bg-white dark:bg-slate-900">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-start gap-6 mb-8">
+                <div class="text-6xl">🛠️</div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-slate-100">Done-For-You Automation & AI Builds</h2>
+                    <p class="text-xl text-slate-600 dark:text-slate-300">We design, build, test, and deploy custom AI workflows and automations tailored to your business.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+                        You know what you need. Now you need someone to build it—correctly, quickly, and without breaking your existing systems.
+                    </p>
+                    <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                        We handle end-to-end implementation: integrations, custom automations, AI assistants, dashboards, and workflows. You get a working system, full documentation, team training, and ongoing support.
+                    </p>
+
+                    <div class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6">
+                        <h3 class="font-bold text-lg mb-4 text-slate-900 dark:text-slate-100">What's Included:</h3>
+                        <ul class="space-y-3 text-slate-700 dark:text-slate-300">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Custom solution design based on your roadmap or requirements</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Full technical build (integrations, workflows, AI models, dashboards)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Testing and QA in a staging environment</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Deployment to production with monitoring</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Complete documentation (user guides, technical specs, troubleshooting)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Team training (hands-on workshops, recorded walkthroughs)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>30-day post-launch support and optimization</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-violet-50 dark:bg-violet-900/20 rounded-xl p-6 border border-violet-200 dark:border-violet-800">
+                        <h3 class="font-bold text-lg mb-3 text-slate-900 dark:text-slate-100">Example Build Types:</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700 dark:text-slate-300">
+                            <div class="flex items-start gap-2">
+                                <span class="text-violet-500">•</span>
+                                <span>Automated lead intake and qualification systems</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-violet-500">•</span>
+                                <span>AI-powered customer support assistants</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-violet-500">•</span>
+                                <span>Multi-platform reporting dashboards</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-violet-500">•</span>
+                                <span>Content generation and repurposing workflows</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-violet-500">•</span>
+                                <span>Document processing and data extraction pipelines</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-violet-500">•</span>
+                                <span>Internal knowledge bases and AI search tools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-6 border border-blue-200 dark:border-blue-800">
+                        <h3 class="font-bold mb-2 text-slate-900 dark:text-slate-100">Ideal For:</h3>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Businesses ready to automate now and need expert execution. Teams without in-house technical resources. Companies that want to move fast and avoid trial-and-error.</p>
+                    </div>
+
+                    <div class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6">
+                        <div class="mb-4">
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-1">Timeline</p>
+                            <p class="text-2xl font-bold text-slate-900 dark:text-slate-100">4–12 weeks</p>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">(depending on scope)</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-1">Investment</p>
+                            <p class="text-2xl font-bold text-blue-500">$15,000–$75,000</p>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">(custom-priced per project)</p>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="block w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all duration-200 text-center">
+                        Start Your Build
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 4: TRAINING & ENABLEMENT -->
+    <section id="training" class="py-16 md:py-24 bg-slate-50 dark:bg-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-start gap-6 mb-8">
+                <div class="text-6xl">🎓</div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-slate-100">AI Training & Team Enablement</h2>
+                    <p class="text-xl text-slate-600 dark:text-slate-300">Upskill your team with hands-on AI training tailored to your industry and workflows.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+                        The best AI strategy is one your team can own and evolve. But most employees don't know where to start—or they're using AI in risky, unproductive ways.
+                    </p>
+                    <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                        We design custom training programs that teach your team how to use AI effectively, safely, and strategically. From prompt engineering to automation basics to AI tool selection, we make your team AI-literate.
+                    </p>
+
+                    <div class="bg-white dark:bg-slate-900 rounded-xl p-6">
+                        <h3 class="font-bold text-lg mb-4 text-slate-900 dark:text-slate-100">What's Included:</h3>
+                        <ul class="space-y-3 text-slate-700 dark:text-slate-300">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Custom curriculum based on your industry and use cases</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Hands-on workshops (virtual or in-person)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Role-specific training tracks (e.g., sales, marketing, ops, leadership)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>AI tool demos and guided practice sessions</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Best practices for prompt engineering, data privacy, and ethical AI use</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Post-training resources (guides, templates, tool libraries)</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Optional: ongoing "office hours" for Q&A and troubleshooting</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-amber-50 dark:bg-amber-900/20 rounded-xl p-6 border border-amber-200 dark:border-amber-800">
+                        <h3 class="font-bold text-lg mb-3 text-slate-900 dark:text-slate-100">Training Formats:</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700 dark:text-slate-300">
+                            <div class="flex items-start gap-2">
+                                <span class="text-amber-500">•</span>
+                                <span>Half-day workshops (3–4 hours)</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-amber-500">•</span>
+                                <span>Full-day intensive boot camps</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-amber-500">•</span>
+                                <span>Multi-week enablement programs with homework and practice</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-amber-500">•</span>
+                                <span>Executive briefings (90 minutes, leadership-focused)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-6 border border-blue-200 dark:border-blue-800">
+                        <h3 class="font-bold mb-2 text-slate-900 dark:text-slate-100">Ideal For:</h3>
+                        <p class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">Companies that want their team to own AI long-term, not depend on vendors. Businesses concerned about employees using AI incorrectly or unsafely. Teams with diverse skill levels that need structured, role-based learning.</p>
+                    </div>
+
+                    <div class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6">
+                        <div class="mb-4">
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-1">Timeline</p>
+                            <p class="text-2xl font-bold text-slate-900 dark:text-slate-100">1 day–4 weeks</p>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">(depending on format)</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mb-1">Investment</p>
+                            <p class="text-2xl font-bold text-blue-500">$5,000–$25,000</p>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">(format and team size dependent)</p>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="block w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all duration-200 text-center">
+                        Request Training
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 5: ONGOING SUPPORT -->
+    <section id="support" class="py-16 md:py-24 bg-white dark:bg-slate-900">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-start gap-6 mb-8">
+                <div class="text-6xl">📈</div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-slate-100">Optimization & Ongoing Support (Retainers)</h2>
+                    <p class="text-xl text-slate-600 dark:text-slate-300">Keep your AI systems running smoothly, improve them over time, and scale as you grow.</p>
+                </div>
+            </div>
+
+            <div class="space-y-6 mb-8">
+                <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+                    AI and automation aren't "set it and forget it." As your business evolves, your workflows need to evolve too.
+                </p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    Our monthly retainer packages provide continuous monitoring, optimization, troubleshooting, and strategic guidance. Think of us as your fractional AI team—available when you need us, scaling up or down as your needs change.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <!-- Starter Support -->
+                <div class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6 border-2 border-slate-200 dark:border-slate-700">
+                    <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-slate-100">Starter Support</h3>
+                    <p class="text-3xl font-bold text-blue-500 mb-4">$2,500<span class="text-lg text-slate-500">/mo</span></p>
+                    <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-300 mb-6">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Up to 10 hours/month of support and optimization</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Performance monitoring and reporting</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Bug fixes and troubleshooting</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Quarterly strategy check-ins</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="block w-full px-4 py-2 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-900 dark:text-slate-100 font-semibold rounded-lg transition-all text-center">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Growth Support -->
+                <div class="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-6 border-2 border-blue-500">
+                    <div class="inline-block px-3 py-1 bg-blue-500 text-white rounded-full text-xs font-semibold mb-3">POPULAR</div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-slate-100">Growth Support</h3>
+                    <p class="text-3xl font-bold text-blue-500 mb-4">$5,000<span class="text-lg text-slate-500">/mo</span></p>
+                    <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-300 mb-6">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Up to 20 hours/month of support and optimization</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Proactive system improvements and feature enhancements</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Monthly performance reviews and recommendations</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Priority support (24-hour response time)</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="block w-full px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-all text-center">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Scale Support -->
+                <div class="bg-slate-50 dark:bg-slate-800 rounded-xl p-6 border-2 border-slate-200 dark:border-slate-700">
+                    <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-slate-100">Scale Support</h3>
+                    <p class="text-3xl font-bold text-blue-500 mb-4">$10,000+<span class="text-lg text-slate-500">/mo</span></p>
+                    <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-300 mb-6">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>40+ hours/month of dedicated support</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Dedicated AI strategist and technical lead</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Continuous optimization and new feature development</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Weekly strategy calls and planning</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Priority support (4-hour response time)</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="block w-full px-4 py-2 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-900 dark:text-slate-100 font-semibold rounded-lg transition-all text-center">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-violet-50 dark:bg-violet-900/20 rounded-xl p-6 border border-violet-200 dark:border-violet-800">
+                <h3 class="font-bold mb-2 text-slate-900 dark:text-slate-100">Ideal For:</h3>
+                <p class="text-slate-700 dark:text-slate-300">Businesses that have launched AI systems and want to keep improving them. Companies without in-house AI/automation expertise. Teams scaling rapidly and need ongoing technical partnership.</p>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-3">Timeline: Month-to-month (no long-term commitment)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHICH SERVICE IS RIGHT FOR YOU -->
+    <section class="py-16 md:py-24 bg-slate-50 dark:bg-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-slate-100">Not Sure Where to Start? Here's How to Choose.</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-300">Pick based on where you are in your AI journey.</p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 border-l-4 border-blue-500">
+                    <p class="font-semibold text-slate-900 dark:text-slate-100 mb-2">"We're curious about AI but don't know if it's right for us."</p>
+                    <p class="text-slate-600 dark:text-slate-400">→ Start with the <strong>AI Readiness Audit</strong>. Low commitment, high clarity.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 border-l-4 border-violet-500">
+                    <p class="font-semibold text-slate-900 dark:text-slate-100 mb-2">"We know we need AI, but we need a clear plan before we invest."</p>
+                    <p class="text-slate-600 dark:text-slate-400">→ Book the <strong>AI Roadmap Sprint</strong>. You'll get a detailed, prioritized plan to execute yourself or hand to us.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 border-l-4 border-emerald-500">
+                    <p class="font-semibold text-slate-900 dark:text-slate-100 mb-2">"We know what we need. We just need someone to build it."</p>
+                    <p class="text-slate-600 dark:text-slate-400">→ Go straight to <strong>Done-For-You Builds</strong>. We'll handle everything from design to deployment.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 border-l-4 border-amber-500">
+                    <p class="font-semibold text-slate-900 dark:text-slate-100 mb-2">"We want our team to own AI long-term, not depend on vendors forever."</p>
+                    <p class="text-slate-600 dark:text-slate-400">→ Invest in <strong>Training & Enablement</strong> first. We'll upskill your people so they can lead your AI strategy.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-xl p-6 border-l-4 border-rose-500">
+                    <p class="font-semibold text-slate-900 dark:text-slate-100 mb-2">"We've already built some systems, but we need help optimizing and scaling."</p>
+                    <p class="text-slate-600 dark:text-slate-400">→ Sign up for <strong>Ongoing Support</strong>. We'll monitor, improve, and evolve your systems as you grow.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <p class="text-slate-600 dark:text-slate-400 mb-4">Still not sure?</p>
+                <a href="contact.html" class="inline-block px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105">
+                    Book a Free Call — We'll Recommend the Right Starting Point
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES CTA STRIP -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-blue-500 to-violet-500 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Save Time, Cut Costs, and Scale Faster?</h2>
+            <p class="text-xl mb-8 opacity-90">Book a free 30-minute call to explore which service is right for you.</p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-slate-100 transition-all duration-200 hover:shadow-xl hover:scale-105">
+                    Book Your Free Call
+                </a>
+                <a href="resources.html" class="inline-block px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-200">
+                    Download Our Services Guide (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 dark:bg-black text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <img src="logo-dark.png" alt="TrueBridge AI logo" class="h-8 mb-4">
+                <p class="text-sm">Bridging the gap between your business and AI.</p>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold mb-4">Services</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="services.html#audit" class="hover:text-blue-400 transition-colors">AI Readiness Audit</a></li>
+                    <li><a href="services.html#roadmap" class="hover:text-blue-400 transition-colors">AI Roadmap Sprint</a></li>
+                    <li><a href="services.html#builds" class="hover:text-blue-400 transition-colors">Done-For-You Builds</a></li>
+                    <li><a href="services.html#training" class="hover:text-blue-400 transition-colors">Training & Enablement</a></li>
+                    <li><a href="services.html#support" class="hover:text-blue-400 transition-colors">Ongoing Support</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold mb-4">Company</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="about.html" class="hover:text-blue-400 transition-colors">About</a></li>
+                    <li><a href="process.html" class="hover:text-blue-400 transition-colors">Process</a></li>
+                    <li><a href="resources.html" class="hover:text-blue-400 transition-colors">Resources</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-white font-semibold mb-4">Get in Touch</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="mailto:hello@truebridge.ai" class="hover:text-blue-400 transition-colors">hello@truebridge.ai</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Book a Free Call</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-800 pt-8 text-sm text-center">
+            <p>&copy; 2024 TrueBridge AI. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+    // Theme toggle functionality
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+    const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+    const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    htmlElement.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') {
+        htmlElement.classList.add('dark');
+        themeToggleLightIcon.classList.remove('hidden');
+    } else {
+        htmlElement.classList.remove('dark');
+        themeToggleDarkIcon.classList.remove('hidden');
+    }
+
+    themeToggleBtn.addEventListener('click', function() {
+        if (htmlElement.classList.contains('dark')) {
+            htmlElement.classList.remove('dark');
+            htmlElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+            themeToggleDarkIcon.classList.remove('hidden');
+            themeToggleLightIcon.classList.add('hidden');
+        } else {
+            htmlElement.classList.add('dark');
+            htmlElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            themeToggleLightIcon.classList.remove('hidden');
+            themeToggleDarkIcon.classList.add('hidden');
+        }
+    });
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>

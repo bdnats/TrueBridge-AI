@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Process | TrueBridge AI - How We Work</title>
+    <meta name="description" content="Discover TrueBridge AI's proven 5-phase process for implementing AI and automation: Discover, Design, Build, Train, Optimize. Clear timelines, defined deliverables, no surprises.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'slate': {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors duration-200">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 md:h-20">
+            <div class="flex-shrink-0">
+                <a href="index.html" class="flex items-center">
+                    <img src="logo-light.png" alt="TrueBridge AI logo" class="h-8 md:h-10 dark:hidden">
+                    <img src="logo-dark.png" alt="TrueBridge AI logo" class="h-8 md:h-10 hidden dark:block">
+                </a>
+            </div>
+
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors">Home</a>
+                <a href="services.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors">Services</a>
+                <a href="process.html" class="text-slate-900 dark:text-slate-100 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors">Process</a>
+                <a href="about.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors">About</a>
+                <a href="resources.html" class="text-slate-600 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition-colors">Resources</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle dark mode">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-slate-700" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-slate-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                </button>
+
+                <a href="contact.html" class="hidden md:inline-block px-6 py-2.5 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all duration-200">
+                    Book a Free Call
+                </a>
+
+                <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-lg bg-slate-100 dark:bg-slate-800" aria-label="Toggle navigation menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <div class="flex flex-col space-y-3">
+                <a href="index.html" class="text-slate-600 dark:text-slate-400 py-2">Home</a>
+                <a href="services.html" class="text-slate-600 dark:text-slate-400 py-2">Services</a>
+                <a href="process.html" class="text-slate-900 dark:text-slate-100 py-2">Process</a>
+                <a href="about.html" class="text-slate-600 dark:text-slate-400 py-2">About</a>
+                <a href="resources.html" class="text-slate-600 dark:text-slate-400 py-2">Resources</a>
+                <a href="contact.html" class="inline-block px-6 py-2.5 bg-blue-500 text-white font-semibold rounded-lg text-center mt-2">Book a Free Call</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- PROCESS: INTRO -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-slate-100">
+                Why Process Matters More Than Tools
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-8">
+                Most AI projects fail—not because the technology doesn't work, but because there's no clear process, no ownership, and no plan.
+            </p>
+            <div class="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 md:p-8 text-left">
+                <p class="text-slate-700 dark:text-slate-300 mb-4 leading-relaxed">
+                    You've seen it: companies buy AI tools, get excited for a week, then abandon them because no one knows how to use them or integrate them into actual workflows.
+                </p>
+                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                    We don't work that way. Every engagement follows a structured, five-phase process designed to minimize risk, maximize ROI, and ensure your team actually adopts what we build.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE OVERVIEW -->
+    <section class="py-16 md:py-20 bg-white dark:bg-slate-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-slate-900 dark:text-slate-100">
+                The TrueBridge Process: Five Phases from Discovery to Optimization
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-3">1</div>
+                    <div class="text-3xl mb-2">🔍</div>
+                    <p class="font-semibold text-slate-900 dark:text-slate-100">Discover & Audit</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-3">2</div>
+                    <div class="text-3xl mb-2">🗺️</div>
+                    <p class="font-semibold text-slate-900 dark:text-slate-100">Design the Roadmap</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-3">3</div>
+                    <div class="text-3xl mb-2">🛠️</div>
+                    <p class="font-semibold text-slate-900 dark:text-slate-100">Build & Integrate</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-3">4</div>
+                    <div class="text-3xl mb-2">🎓</div>
+                    <p class="font-semibold text-slate-900 dark:text-slate-100">Train & Enable</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-3">5</div>
+                    <div class="text-3xl mb-2">📈</div>
+                    <p class="font-semibold text-slate-900 dark:text-slate-100">Optimize & Evolve</p>
+                </div>
+            </div>
+
+            <p class="text-center text-slate-600 dark:text-slate-400 mt-8">Every phase has clear deliverables, timelines, and success criteria. No ambiguity. No surprises.</p>
+        </div>
+    </section>
+
+    <!-- PHASE DETAILS -->
+    <section class="py-16 md:py-24 bg-slate-50 dark:bg-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+            <!-- Phase 1 -->
+            <div class="bg-white dark:bg-slate-900 rounded-xl p-8 shadow-lg">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">1</div>
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold mb-2 text-slate-900 dark:text-slate-100">Phase 1: Discover & Audit</h2>
+                        <p class="text-lg text-slate-600 dark:text-slate-300">We map your operations, interview your team, and identify where AI and automation will deliver the biggest impact.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold mb-3 text-slate-900 dark:text-slate-100">What Happens:</h3>
+                        <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
+                            <li>• Stakeholder interviews with your team</li>
+                            <li>• Process mapping of current workflows</li>
+                            <li>• Opportunity analysis and ROI ranking</li>
+                            <li>• Quick win identification</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-3 text-slate-900 dark:text-slate-100">What You Get:</h3>
+                        <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
+                            <li>• Detailed audit report</li>
+                            <li>• Prioritized opportunity list</li>
+                            <li>• ROI estimates</li>
+                            <li>• 60-minute results presentation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                    <p class="text-sm text-slate-700 dark:text-slate-300"><strong>Timeline:</strong> 1–2 weeks</p>
+                    <p class="text-sm text-slate-700 dark:text-slate-300 mt-1"><strong>What We Need from You:</strong> 3–5 hours of interview time, access to workflow documentation, examples of current pain points</p>
+                </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="bg-white dark:bg-slate-900 rounded-xl p-8 shadow-lg">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="w-12 h-12 bg-violet-500 text-white rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">2</div>
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold mb-2 text-slate-900 dark:text-slate-100">Phase 2: Design the Roadmap</h2>
+                        <p class="text-lg text-slate-600 dark:text-slate-300">We turn audit findings into a prioritized, actionable 30-90 day plan with clear costs, timelines, and expected outcomes.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold mb-3 text-slate-900 dark:text-slate-100">What Happens:</h3>
+                        <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
+                            <li>• Initiative prioritization based on ROI</li>
+                            <li>• Technical architecture design</li>
+                            <li>• Cost & timeline estimation</li>
+                            <li>• Risk assessment</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-3 text-slate-900 dark:text-slate-100">What You Get:</h3>
+                        <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
+                            <li>• 30-60-90 day implementation roadmap</li>
+                            <li>• Detailed project briefs</li>
+                            <li>• Tool and vendor recommendations</li>
+                            <li>• 90-minute strategy walkthrough</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 p-4 bg-violet-50 dark:bg-violet-900/20 rounded-lg">
+                    <p class="text-sm text-slate-700 dark:text-slate-300"><strong>Timeline:</strong> 2–3 weeks</p>
+                    <p class="text-sm text-slate-700 dark:text-slate-300 mt-1"><strong>What We Need from You:</strong> Budget/timeline constraints, feedback on priorities, access to current tech stack</p>
+                </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="bg-white dark:bg-slate-900 rounded-xl p-8 shadow-lg">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="w-12 h-12 bg-emerald-500 text-white rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">3</div>
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold mb-2 text-slate-900 dark:text-slate-100">Phase 3: Build & Integrate</h2>
+                        <p class="text-lg text-slate-600 dark:text-slate-300">We design, build, test, and deploy your custom AI and automation solutions—while keeping your existing systems running smoothly.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold mb-3 text-slate-900 dark:text-slate-100">What Happens:</h3>
+                        <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
+                            <li>• Solution design (wireframes, specs)</li>
+                            <li>• Development of integrations & workflows</li>
+                            <li>• Staging & testing</li>
+                            <li>• Production deployment with monitoring</li>
+                            <li>• Documentation creation</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-3 text-slate-900 dark:text-slate-100">What You Get:</h3>
+                        <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
+                            <li>• Fully functional AI/automation systems</li>
+                            <li>• Integrations with existing tools</li>
+                            <li>• Complete documentation</li>
+                            <li>• Staging environment access</li>
+                            <li>• 30-day post-launch support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg">
+                    <p class="text-sm text-slate-700 dark:text-slate-300"><strong>Timeline:</strong> 4–12 weeks (depending on scope)</p>
+                    <p class="text-sm text-slate-700 dark:text-slate-300 mt-1"><strong>What We Need from You:</strong> System access, timely feedback on designs, designated point person, QA participation</p>
+                </div>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="bg-white dark:bg-slate-900 rounded-xl p-8 shadow-lg">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="w-12 h-12 bg-amber-500 text-white rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">4</div>
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold mb-2 text-slate-900 dark:text-slate-100">Phase 4: Train & Enable</h2>
+                        <p class="text-lg text-slate-600 dark:text-slate-300">We don't just hand you a system and disappear. We train your team to use it, troubleshoot it, and evolve it over time.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold mb-3 text-slate-900 dark:text-slate-100">What Happens:</h3>
+                        <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
+                            <li>• Hands-on training workshops</li>
+                            <li>• Role-based training</li>
+                            <li>• Recorded walkthroughs</li>
+                            <li>• Office hours for Q&A</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-3 text-slate-900 dark:text-slate-100">What You Get:</h3>
+                        <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
+                            <li>• Live training sessions</li>
+                            <li>• Recorded video guides</li>
+                            <li>• Written user guides & FAQs</li>
+                            <li>• Follow-up support access</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg">
+                    <p class="text-sm text-slate-700 dark:text-slate-300"><strong>Timeline:</strong> 1–2 weeks (concurrent with/after build)</p>
+                    <p class="text-sm text-slate-700 dark:text-slate-300 mt-1"><strong>What We Need from You:</strong> Team participation, feedback on materials, willingness to practice</p>
+                </div>
+            </div>
+
+            <!-- Phase 5 -->
+            <div class="bg-white dark:bg-slate-900 rounded-xl p-8 shadow-lg">
+                <div class="flex items-start gap-4 mb-6">
+                    <div class="w-12 h-12 bg-rose-500 text-white rounded-full flex items-center justify-center text-xl font-bold flex-shrink-0">5</div>
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold mb-2 text-slate-900 dark:text-slate-100">Phase 5: Optimize & Evolve</h2>
+                        <p class="text-lg text-slate-600 dark:text-slate-300">We monitor performance, gather feedback, and continuously improve the system as your business grows.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold mb-3 text-slate-900 dark:text-slate-100">What Happens:</h3>
+                        <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
+                            <li>• Performance monitoring</li>
+                            <li>• Feedback collection from your team</li>
+                            <li>• System refinement based on data</li>
+                            <li>• Feature expansion as you scale</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-3 text-slate-900 dark:text-slate-100">What You Get:</h3>
+                        <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm">
+                            <li>• Monthly performance reports (if on retainer)</li>
+                            <li>• Proactive optimization recommendations</li>
+                            <li>• Bug fixes and updates</li>
+                            <li>• Strategic guidance on next opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 p-4 bg-rose-50 dark:bg-rose-900/20 rounded-lg">
+                    <p class="text-sm text-slate-700 dark:text-slate-300"><strong>Timeline:</strong> Ongoing (optional retainer)</p>
+                    <p class="text-sm text-slate-700 dark:text-slate-300 mt-1"><strong>What We Need from You:</strong> Honest feedback, usage data, openness to iteration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT WE NEED VS WHAT WE HANDLE -->
+    <section class="py-16 md:py-24 bg-white dark:bg-slate-900">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-slate-900 dark:text-slate-100">
+                Your Role vs. Our Role: Clear Expectations
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-8 border border-blue-200 dark:border-blue-800">
+                    <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-slate-100">What We Need from You</h3>
+                    <ul class="space-y-3 text-slate-700 dark:text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-500 font-bold">•</span>
+                            <span><strong>Time for discovery:</strong> 3–5 hours of interviews during Phase 1</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-500 font-bold">•</span>
+                            <span><strong>Access to systems:</strong> Logins, API keys, tools we'll integrate</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-500 font-bold">•</span>
+                            <span><strong>Timely feedback:</strong> Review designs and answer questions promptly</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-500 font-bold">•</span>
+                            <span><strong>A point person:</strong> One team member to coordinate</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-500 font-bold">•</span>
+                            <span><strong>Honest communication:</strong> Tell us when something isn't working</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-emerald-50 dark:bg-emerald-900/20 rounded-xl p-8 border border-emerald-200 dark:border-emerald-800">
+                    <h3 class="text-xl font-bold mb-4 text-slate-900 dark:text-slate-100">What We Handle</h3>
+                    <ul class="space-y-3 text-slate-700 dark:text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <span class="text-emerald-500 font-bold">•</span>
+                            <span><strong>All technical work:</strong> Design, development, testing, deployment</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-emerald-500 font-bold">•</span>
+                            <span><strong>Project management:</strong> Timelines, milestones, communication</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-emerald-500 font-bold">•</span>
+                            <span><strong>Training & enablement:</strong> Workshops, guides, videos, Q&A</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-emerald-500 font-bold">•</span>
+                            <span><strong>Ongoing optimization:</strong> Monitoring, improvements, scaling</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-emerald-500 font-bold">•</span>
+                            <span><strong>Risk mitigation:</strong> Testing, careful deployment, rollback plans</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="text-center text-lg text-slate-600 dark:text-slate-400 mt-8 font-medium">
+                You focus on running your business. We handle the AI and automation.
+            </p>
+        </div>
+    </section>
+
+    <!-- RISK MITIGATION -->
+    <section class="py-16 md:py-24 bg-slate-50 dark:bg-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-slate-900 dark:text-slate-100">
+                How We Minimize Risk
+            </h2>
+            <p class="text-lg text-slate-600 dark:text-slate-300 text-center mb-12">
+                We know you're worried about things breaking, data getting lost, or wasting money on something that doesn't work. Here's how we de-risk every engagement:
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white dark:bg-slate-900 rounded-lg p-6">
+                    <h3 class="font-bold mb-2 text-slate-900 dark:text-slate-100">We test in staging first</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">Nothing goes live until you've reviewed and approved it in a safe test environment.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-lg p-6">
+                    <h3 class="font-bold mb-2 text-slate-900 dark:text-slate-100">We integrate, we don't replace</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">We work with your existing tools—no rip-and-replace projects unless absolutely necessary.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-lg p-6">
+                    <h3 class="font-bold mb-2 text-slate-900 dark:text-slate-100">We document everything</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">If we get hit by a bus, you still have full documentation and can hand it to another dev.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-lg p-6">
+                    <h3 class="font-bold mb-2 text-slate-900 dark:text-slate-100">We prioritize quick wins</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">You see ROI early, usually within the first 30 days, so you're not waiting months to see value.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-lg p-6">
+                    <h3 class="font-bold mb-2 text-slate-900 dark:text-slate-100">We build with rollback plans</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">If something goes wrong, we can revert quickly without data loss.</p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 rounded-lg p-6">
+                    <h3 class="font-bold mb-2 text-slate-900 dark:text-slate-100">Track record matters</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">We've never lost client data, broken a critical system, or disappeared mid-project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-blue-500 to-violet-500 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Start? Here's What Happens Next.</h2>
+            <p class="text-xl mb-8 opacity-90">Book a free 30-minute call. We'll discuss your challenges, explore fit, and outline next steps.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-slate-100 transition-all">
+                    Book Your Free Call
+                </a>
+                <a href="services.html" class="inline-block px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-all">
+                    Explore Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-slate-900 dark:bg-black text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <img src="logo-dark.png" alt="TrueBridge AI logo" class="h-8 mb-4">
+                <p class="text-sm">Bridging the gap between your business and AI.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold mb-4">Services</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="services.html#audit" class="hover:text-blue-400 transition-colors">AI Readiness Audit</a></li>
+                    <li><a href="services.html#roadmap" class="hover:text-blue-400 transition-colors">AI Roadmap Sprint</a></li>
+                    <li><a href="services.html#builds" class="hover:text-blue-400 transition-colors">Done-For-You Builds</a></li>
+                    <li><a href="services.html#training" class="hover:text-blue-400 transition-colors">Training & Enablement</a></li>
+                    <li><a href="services.html#support" class="hover:text-blue-400 transition-colors">Ongoing Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold mb-4">Company</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="about.html" class="hover:text-blue-400 transition-colors">About</a></li>
+                    <li><a href="process.html" class="hover:text-blue-400 transition-colors">Process</a></li>
+                    <li><a href="resources.html" class="hover:text-blue-400 transition-colors">Resources</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold mb-4">Get in Touch</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="mailto:hello@truebridge.ai" class="hover:text-blue-400 transition-colors">hello@truebridge.ai</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-400 transition-colors">Book a Free Call</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-slate-800 pt-8 text-sm text-center">
+            <p>&copy; 2024 TrueBridge AI. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+    const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+    const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    htmlElement.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') {
+        htmlElement.classList.add('dark');
+        themeToggleLightIcon.classList.remove('hidden');
+    } else {
+        htmlElement.classList.remove('dark');
+        themeToggleDarkIcon.classList.remove('hidden');
+    }
+
+    themeToggleBtn.addEventListener('click', function() {
+        if (htmlElement.classList.contains('dark')) {
+            htmlElement.classList.remove('dark');
+            htmlElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+            themeToggleDarkIcon.classList.remove('hidden');
+            themeToggleLightIcon.classList.add('hidden');
+        } else {
+            htmlElement.classList.add('dark');
+            htmlElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            themeToggleLightIcon.classList.remove('hidden');
+            themeToggleDarkIcon.classList.add('hidden');
+        }
+    });
+
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>
